@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.wtyt.bas.mapper.BasProMapper">
+    <select id="getBasProList" useCache="false"  parameterType="BasProBean"
+            resultType="BasProBean">
+        SELECT ID,PRO_NAME,PRO_CODE,CREATED_TIME FROM T_SB_PRO
+        WHERE 1=1
+        <if test="pro_name != null and pro_name != ''">
+            AND PRO_NAME like CONCAT(CONCAT('%',#{pro_name}),'%')
+        </if>
+        <if test="pro_code != null and pro_code != ''">
+            AND PRO_CODE like CONCAT(CONCAT('%',#{pro_code}),'%')
+        </if>
+        ORDER BY CREATED_TIME DESC
+    </select>
+</mapper>
+
