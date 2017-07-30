@@ -9,10 +9,10 @@ spring:
     content-type: text/html
 
 druid:
-  url: jdbc:oracle:thin:@220.248.226.76:1523:orcyehoo
-  username: cim3
-  password: 0C3!i91m#_-3-
-  driverClassName: oracle.jdbc.OracleDriver
+  url:
+  username:
+  password:
+  driverClassName:
   #type: com.alibaba.druid.pool.DruidDataSource
   # 下面为连接池的补充设置，应用到上面所有数据源中
   # 初始化大小，最小，最大
