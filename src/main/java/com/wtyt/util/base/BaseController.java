@@ -8,6 +8,9 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.net.URLDecoder;
 
+/**
+ * 基础Controller供每个Controller继承
+ */
 public class BaseController {
 	/**
 	 * 系统异常返回页面

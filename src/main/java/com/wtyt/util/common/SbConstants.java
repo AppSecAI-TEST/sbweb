@@ -2,10 +2,6 @@ package com.wtyt.util.common;
 
 public class SbConstants {
     /**
-     * 短信扣费 单位点
-     */
-    public static final int SMS_FEE = 20;
-    /**
      * 分页显示行数
      */
     public static final int PAGE_SIZE = 15;

@@ -4,6 +4,7 @@ import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.*;
 
 /**
+ * htmlunit爬取汽车之家汽车品牌和图标
  * Created by zhouxiaoxiao on 17/6/18.
  */
 public class htmlunit {

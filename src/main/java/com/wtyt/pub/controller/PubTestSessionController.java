@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
+/**
+ * spring session测试控制器
+ */
 @Controller
 @SessionAttributes({"sa", SbConstants.ORG_KEY})
 public class PubTestSessionController {
