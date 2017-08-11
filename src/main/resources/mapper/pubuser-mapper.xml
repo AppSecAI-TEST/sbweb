@@ -4,8 +4,8 @@
 <mapper namespace="com.wtyt.pub.mapper.PubUserMapper">
 	<select id="getUserByName" useCache="false" parameterType="PubUserBean"
 		resultType="PubUserBean">
-		SELECT LOGIN_NAME,REAL_NAME,PASS_WORD FROM T_SB_USER
-		WHERE LOGIN_NAME = #{login_name}
+		SELECT login_name,real_name,pass_word FROM t_sb_user
+		WHERE login_name = #{login_name}
 	</select>
 </mapper>
 
